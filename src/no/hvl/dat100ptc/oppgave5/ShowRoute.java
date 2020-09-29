@@ -35,8 +35,6 @@ public class ShowRoute extends EasyGraphics {
 		makeWindow("Route", MAPXSIZE + 2 * MARGIN, MAPYSIZE + 2 * MARGIN);
 
 		showRouteMap(MARGIN + MAPYSIZE);
-
-		playRoute(MARGIN + MAPYSIZE);
 		
 		showStatistics();
 	}
@@ -86,15 +84,6 @@ public class ShowRoute extends EasyGraphics {
 		throw new UnsupportedOperationException(TODO.method());
 		
 		// TODO - SLUTT;
-	}
-
-	public void playRoute(int ybase) {
-
-		// TODO - START
-		
-		throw new UnsupportedOperationException(TODO.method());
-		
-		// TODO - SLUTT
 	}
 
 }

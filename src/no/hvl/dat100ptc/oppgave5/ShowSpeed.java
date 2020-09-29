@@ -12,8 +12,8 @@ import no.hvl.dat100ptc.oppgave4.GPSComputer;
 
 public class ShowSpeed extends EasyGraphics {
 			
-	private static int MARGIN = 50;
-	private static int BARHEIGHT = 200; // assume no speed above 200 km/t
+	private static final int MARGIN = 50;
+	private static final int BARHEIGHT = 200; // assume no speed above 200 km/t
 
 	private GPSComputer gpscomputer;
 	private GPSPoint[] gpspoints;
@@ -42,10 +42,12 @@ public class ShowSpeed extends EasyGraphics {
 	}
 	
 	public void showSpeedProfile(int ybase, int N) {
-		
-		System.out.println("Angi tidsskalering i tegnevinduet ...");
-		int timescaling = Integer.parseInt(getText("Tidsskalering"));
-				
+
+		// get segments speeds from the GPS computer object		
+		double[] speeds = gpscomputer.speeds();
+
+		int x = MARGIN,y;
+
 		// TODO - START
 		
 		throw new UnsupportedOperationException(TODO.method());

@@ -12,9 +12,8 @@ import javax.swing.JOptionPane;
 
 public class ShowProfile extends EasyGraphics {
 
-	private static int MARGIN = 50;		// margin on the sides 
+	private static final int MARGIN = 50;		// margin on the sides 
 	
-	//FIXME: use highest point and scale accordingly
 	private static int MAXBARHEIGHT = 500; // assume no height above 500 meters
 	
 	private GPSPoint[] gpspoints;
@@ -45,7 +44,9 @@ public class ShowProfile extends EasyGraphics {
 	public void showHeightProfile(int ybase) {
 
 		// ybase indicates the position on the y-axis where the columns should start
-		
+	
+		int x = MARGIN,y;
+
 		// TODO - START
 
 		throw new UnsupportedOperationException(TODO.method());
