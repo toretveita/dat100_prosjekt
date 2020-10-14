@@ -123,7 +123,7 @@ public class GPSUtils {
 		int hr, min, sec;
 		// TODO - START
 		
-		sec = secs % 360;
+		sec = secs % 3600;
 		sec = sec + (sec % 60);
 		hr = secs / 360;
 		min = (secs % hr) / 60;
